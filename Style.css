@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 10vh;
+
+}
+nav{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid grey;
+    box-shadow: 2px 0px 5px gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logo{
+    font-size: 50px;
+    font-weight:bolder;
+}
+.menu a{
+    /* underlined is removed->from anchor tag which is by default visible */
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+/* This line will pick the last child of menu */
+.menu a:last-child{
+    background-color: black;
+    color: white;
+}
+.container{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective: 2000px;
+    margin: 10px;
+}
+.leftcontainer{
+    margin: 20px  ;
+    padding: 0px 20px;
+   
+    flex-basis: 50%;
+    animation: animate 3s linear infinite;
+    
+    /* margin: 20px 20px 20px 20px;
+    padding: 2px 2px; */
+}
+/* for running the animation */
+@keyframes animate {
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+    
+    
+}
+.leftcontainer img{
+    width: 600px;
+
+}
+.rightcontainer p{
+    font-size: 50px;
+    margin: 20px 0px;
+}
+.rightcontainer h1{
+    font-size: 100px;
+
+}
+button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+}
+
+
+
+
+
+
+
+
+
